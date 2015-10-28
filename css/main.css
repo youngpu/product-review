@@ -1,0 +1,13 @@
+body {
+
+}
+
+#productImg {
+	border-style: ridge;
+	border-width: 5px;
+	border-color: #996633;
+	width: 100%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}

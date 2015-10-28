@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title of Website-->
+        <title> --- Review </title>
+        <!-- Stars & Ratings-->  
+        <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/jquery.raty.js"></script>
+        <link rel="stylesheet" type="text/css" href="lib/jquery.raty.css" />    
+        <!-- Parse -->
+        <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>   
+        <!-- Bootstrap & JQuery -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <!-- CSS & JS -->
+        <script type="text/javascript" src="js/review.js"></script>
+        <link rel="stylesheet" href="css/main.css"/>           
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Product Review of Something!</h1>
+            <div class='row'>
+                <div class='col-xs-12 col-sm-6'>
+                    <a href="http://www.amazon.com/Harman-Kardon-Soundsticks-III-Multimedia/dp/B0042F3K9W/ref=sr_1_1?ie=UTF8&qid=1446050973&sr=8-1&keywords=harman+kardon+soundstick+3" target="_blank">
+                        <img id='productImg' src="img/product.jpg" alt="Product Image"/>
+                    </a>
+                </div>
+                <div class='col-xs-12 col-sm-6'>
+                    <h2 id='sectionHeader'>About this product:</h2>
+                    <!-- Stars for average Rating-->
+                    Average Rating: <div id='averageRating'></div>
+                    <p id='productInfo'></p>
+                <hr>
+                <ul>
+                    <li>
+                      Compatible with all devices with a stereo minijack outputs
+                    </li>
+                    <li>
+                      Outstanding bass performance
+                    </li>
+                    <li>
+                      Touch volume and mute controls
+                    </li>
+                    <li>
+                      Subwoofer volume control
+                    </li>
+                    <li>
+                      Angle-adjustable satellites
+                    </li>
+              </ul>        
+            </div>
+        </div>
+
+        <div class='container'>
+            <h2 id='sectionHeader'>Review this product</h2>
+            <!-- Enter reviews-->
+            <form id='userReview'>
+                <div class='form-group'>
+                    <div id='rating'></div>
+                </div> 
+                <div class='form-group'>
+                    <input id='review_username' class='form-control' type='text' placeholder='Username'/>
+                </div>
+                <div class='form-group'>
+                    <input id='review_title' class='form-control' type='text' placeholder='Title of Review'/>
+                </div>
+                <div class='form-group'>
+                    <textarea id='review_body' class='form-control' rows='7' placeholder='Write your review here'></textarea>
+                </div>     
+                <button type='submit' class='btn btn-info btn-block'>Submit</button>
+            </form>
+        </div>  
+        <div class='container'>
+            <h2 class='sectionHeader'>Customer Reviews</h2>
+            <!-- Area where JS will create elements -->
+             <div id='reviewArea'></div>
+        </div>                                   
+    </body>
+
+</html>
