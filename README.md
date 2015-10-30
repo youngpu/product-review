@@ -1,5 +1,7 @@
 When you create your project (or at some point before submission), you must create a Readme.md file that describes your project. In addition to a short description, please include the following information:
 
+http://students.washington.edu/youngpu/info343/product-review/
+
 Did you receive help from any other sources (classmates, etc.)? If so, please list who.
 TA and professor. A lot from lecture, parse-intro. Received help others not in the class. 
 It includes my flatmate, sibling, and friend who has taken the class previously.
