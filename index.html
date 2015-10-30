@@ -4,23 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Title of Website-->
-        <title> --- Review </title>
-        <!-- Stars & Ratings-->  
-        <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
-        <script type="text/javascript" src="lib/jquery.raty.js"></script>
-        <link rel="stylesheet" type="text/css" href="lib/jquery.raty.css" />    
-        <!-- Parse -->
-        <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>   
-        <!-- Bootstrap & JQuery -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <!-- CSS & JS -->
-        <script type="text/javascript" src="js/review.js"></script>
-        <link rel="stylesheet" href="css/main.css"/>           
+        <title>Harman Kardon Soundsticks III Review </title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Include parse library here -->
+        <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
     </head>
     <body>
         <div class="container">
-            <h1 id="title">Product Review of Something!</h1>
+            <h1 id="title">Product Review of Harman Kardon Soundsticks III </h1>
             <div class='row'>
                 <div class='col-xs-12 col-sm-6'>
                     <a href="http://www.amazon.com/Harman-Kardon-Soundsticks-III-Multimedia/dp/B0042F3K9W/ref=sr_1_1?ie=UTF8&qid=1446050973&sr=8-1&keywords=harman+kardon+soundstick+3" target="_blank">
@@ -30,29 +23,36 @@
                 <div class='col-xs-12 col-sm-6'>
                     <h2 id='sectionHeader'>About this product:</h2>
                     <!-- Stars for average Rating-->
-                    Average Rating: <div id='averageRating'></div>
+                    <h5><b>Average Rating:</b></h5>
+                    <div id='averageRating'></div>
+                    <p id='reviewRatings'></p>
                     <p id='productInfo'></p>
                 <hr>
                 <ul>
                     <li>
-                      Compatible with all devices with a stereo minijack outputs
+                        Four, 1" full-ragne transducer per channel powered by a 10-watt amplifier for room-filling sound
                     </li>
                     <li>
-                      Outstanding bass performance
+                        One, 6" low-frequency transducer powered by a 20-watt amplifier for outstanding bass performance
                     </li>
                     <li>
-                      Touch volume and mute controls
+                        Compatible with all devices with a stereo mini-jack output
                     </li>
                     <li>
-                      Subwoofer volume control
+                        Touch volume and mute control
                     </li>
                     <li>
-                      Angle-adjustable satellites
+                         Subwoofer volume control
+                    </li>
+                    <li>
+                        Angle-adjustable satellites
+                    </li>
+                    <li>
+                        Incredible industrial design
                     </li>
               </ul>        
             </div>
         </div>
-
         <div class='container'>
             <h2 id='sectionHeader'>Review this product</h2>
             <!-- Enter reviews-->
@@ -68,15 +68,16 @@
                 </div>
                 <div class='form-group'>
                     <textarea id='review_body' class='form-control' rows='7' placeholder='Write your review here'></textarea>
-                </div>     
+                </div> 
                 <button type='submit' class='btn btn-info btn-block'>Submit</button>
-            </form>
-        </div>  
+            </form>         
+        </div>
         <div class='container'>
             <h2 class='sectionHeader'>Customer Reviews</h2>
             <!-- Area where JS will create elements -->
              <div id='reviewArea'></div>
-        </div>                                   
+        </div>  
     </body>
-
+    <script type="text/javascript" src="lib/jquery.raty.js"></script>
+    <script type="text/javascript" src="js/review.js"></script>
 </html>
